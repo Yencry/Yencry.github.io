@@ -23,6 +23,12 @@
             background-attachment: fixed; /* 背景固定，不随页面滚动 */
             background-repeat: no-repeat; /* 图片不重复 */
             transition: background-image 1s ease-in-out; /* 为背景切换添加平滑过渡效果 */
+            /* 隐藏默认光标 */
+            cursor: none;
+        }
+        /* 对所有可点击元素也隐藏默认光标 */
+        a, button {
+            cursor: none;
         }
         .news-list-item {
             transition: background-color 0.2s ease-in-out;
@@ -40,9 +46,27 @@
             -webkit-backdrop-filter: blur(12px); /* 兼容Safari浏览器 */
             border: 1px solid rgba(255, 255, 255, 0.2); /* 添加细微边框增加质感 */
         }
+
+        /* --- 自定义光标样式 --- */
+        .custom-cursor {
+            position: fixed; /* 固定定位，跟随鼠标 */
+            width: 32px; /* 光标宽度，根据您的GIF大小调整 */
+            height: 32px; /* 光标高度 */
+            background-size: contain;
+            /* 关键：让鼠标事件可以“穿透”这个元素，点击到下方的链接 */
+            pointer-events: none; 
+            left: 0;
+            top: 0;
+            z-index: 9999; /* 确保光标在最顶层 */
+            /* 如果需要，可以微调光标图片的位置，使其热点对准指针 */
+            /* transform: translate(-5px, -5px); */
+        }
     </style>
 </head>
 <body class="text-gray-800 flex flex-col min-h-screen">
+
+    <!-- 自定义光标的HTML元素 -->
+    <div id="custom-cursor" class="custom-cursor"></div>
 
     <!-- 头部区域 -->
     <header class="bg-white/75 backdrop-blur-sm shadow-sm sticky top-0 z-50">
@@ -224,6 +248,18 @@
             const postalCodeElement = document.getElementById('postal-code');
             if (postalCodeElement) {
                 postalCodeElement.textContent = generateJapanesePostalCode();
+            }
+
+            // --- 自定义光标 ---
+            const cursor = document.getElementById('custom-cursor');
+            if (cursor) {
+                // 请将下面的路径替换为您转换后的.gif光标文件路径
+                cursor.style.backgroundImage = 'url(cursors/AppStarting.gif)';
+
+                document.addEventListener('mousemove', function(e) {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
             }
         });
     </script>
