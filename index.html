@@ -41,9 +41,9 @@
         }
         /* 为内容卡片添加更明显的毛玻璃特效 */
         .content-card {
-            background-color: rgba(255, 255, 255, 0.65); /* 调整了透明度 */
-            backdrop-filter: blur(12px); /* 增加了模糊半径 */
-            -webkit-backdrop-filter: blur(12px); /* 兼容Safari浏览器 */
+            background-color: rgba(255, 255, 255, 0.5); /* 进一步降低透明度 */
+            backdrop-filter: blur(16px); /* 进一步增加模糊半径 */
+            -webkit-backdrop-filter: blur(16px); /* 兼容Safari浏览器 */
             border: 1px solid rgba(255, 255, 255, 0.2); /* 添加细微边框增加质感 */
         }
 
@@ -69,7 +69,7 @@
     <div id="custom-cursor" class="custom-cursor"></div>
 
     <!-- 头部区域 -->
-    <header class="bg-white/75 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+    <header class="bg-white/50 backdrop-blur-lg shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center space-x-4">
@@ -88,7 +88,7 @@
     </header>
 
     <!-- 导航栏 (已修改背景色和透明度) -->
-    <nav class="bg-blue-900/60 backdrop-blur-sm text-white shadow-lg">
+    <nav class="bg-blue-900/40 backdrop-blur-lg text-white shadow-lg">
         <div class="container mx-auto px-4">
             <ul class="flex flex-wrap justify-center items-center">
                 <li><a href="topics.html" class="nav-link block px-5 py-3 hover:bg-blue-700/50">教改专题</a></li>
@@ -186,7 +186,7 @@
     </main>
     
     <!-- 页脚 (已重新设计) -->
-    <footer class="bg-white/75 backdrop-blur-sm shadow-inner mt-auto">
+    <footer class="bg-white/50 backdrop-blur-lg shadow-inner mt-auto">
         <div class="container mx-auto px-4 py-5">
             <!-- 网站导航 (一行显示) -->
             <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-gray-700 mb-5">
