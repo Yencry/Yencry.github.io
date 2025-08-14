@@ -40,11 +40,11 @@
             
             <!-- 顶部工具栏 -->
             <div class="flex items-center space-x-4 text-sm text-gray-600">
-                <a href="#" class="hover:text-blue-600">设为首页</a>
+                <a href="#" id="setHomepage" class="hover:text-blue-600">设为首页</a>
                 <span>|</span>
-                <a href="#" class="hover:text-blue-600">加入收藏</a>
+                <a href="#" id="addFavorite" class="hover:text-blue-600">加入收藏</a>
                 <span>|</span>
-                <a href="contact.html" class="hover:text-blue-600">联系我们</a>
+                <a href="https://github.com/Yencry/Yencry.github.io/issues" target="_blank" class="hover:text-blue-600">联系我们</a>
             </div>
         </div>
     </header>
@@ -157,6 +157,7 @@
                 <a href="https://www.zhihuishu.com/" target="_blank" class="hover:text-blue-600">智慧树</a>
                 <a href="http://erya.mooc.chaoxing.com/" target="_blank" class="hover:text-blue-600">超星尔雅</a>
                 <a href="https://www.icourse163.org/" target="_blank" class="hover:text-blue-600">中国大学MOOC</a>
+                <a href="https://www.guc.edu.kg/" target="_blank" class="hover:text-blue-600">中国原神大学</a>
             </div>
         </div>
     </section>
@@ -165,34 +166,72 @@
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto px-4 text-center text-sm">
             <p>Copyright &copy; 2024 神里凌华大学教务处</p>
-            <p class="mt-1 text-gray-400">地址: 稻妻城天领奉行府内 | 邮编: 110159</p>
+            <p class="mt-1 text-gray-400">地址: 稻妻城天领奉行府内 | 邮编: <span id="postal-code"></span></p>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Function to format date as MM-DD
+            // --- 日期动态生成 ---
             function formatDate(date) {
                 const month = String(date.getMonth() + 1).padStart(2, '0');
                 const day = String(date.getDate()).padStart(2, '0');
                 return `[${month}-${day}]`;
             }
-
-            // Select all elements that should have a dynamic date
             const dateElements = document.querySelectorAll('.dynamic-date');
-            
-            let currentDate = new Date(); // Start with today
-
-            // Loop through each date element and set a new date
+            let currentDate = new Date();
             dateElements.forEach(el => {
-                // Subtract a random number of days (e.g., 1 to 7) from the current date
-                // This makes each subsequent date older than the previous one
                 const randomDaysToSubtract = Math.floor(Math.random() * 7) + 1;
                 currentDate.setDate(currentDate.getDate() - randomDaysToSubtract);
-                
-                // Set the formatted date as the element's text content
                 el.textContent = formatDate(currentDate);
             });
+
+            // --- 随机生成日本邮编 ---
+            function generateJapanesePostalCode() {
+                const firstPart = String(Math.floor(Math.random() * 900) + 100); // 100-999
+                const secondPart = String(Math.floor(Math.random() * 9000) + 1000).padStart(4, '0'); // 0000-9999
+                return `〒${firstPart}-${secondPart}`;
+            }
+            const postalCodeElement = document.getElementById('postal-code');
+            if (postalCodeElement) {
+                postalCodeElement.textContent = generateJapanesePostalCode();
+            }
+
+            // --- 设为首页功能 ---
+            const setHomepageBtn = document.getElementById('setHomepage');
+            if (setHomepageBtn) {
+                setHomepageBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    try {
+                        document.body.style.behavior = 'url(#default#homepage)';
+                        document.body.setHomePage(window.location.href);
+                    } catch (error) {
+                        alert("您的浏览器不支持自动设为首页，请手动设置。");
+                    }
+                });
+            }
+
+            // --- 加入收藏功能 ---
+            const addFavoriteBtn = document.getElementById('addFavorite');
+            if (addFavoriteBtn) {
+                addFavoriteBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const url = window.location.href;
+                    const title = document.title;
+                    try {
+                        // For IE
+                        window.external.addFavorite(url, title);
+                    } catch (e1) {
+                        try {
+                            // For Firefox
+                            window.sidebar.addPanel(title, url, "");
+                        } catch (e2) {
+                            // For other modern browsers
+                            alert("您的浏览器不支持自动加入收藏，请按 " + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Command/Cmd' : 'CTRL') + "+D 手动收藏。");
+                        }
+                    }
+                });
+            }
         });
     </script>
 
