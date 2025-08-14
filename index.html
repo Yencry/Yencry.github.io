@@ -42,7 +42,7 @@
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-800 flex flex-col min-h-screen">
 
     <!-- 头部区域 -->
     <header class="bg-white/75 backdrop-blur-sm shadow-sm sticky top-0 z-50">
@@ -65,20 +65,20 @@
         </div>
     </header>
 
-    <!-- 导航栏 -->
-    <nav class="bg-blue-600/80 backdrop-blur-sm text-white shadow-lg">
+    <!-- 导航栏 (已修改背景色和透明度) -->
+    <nav class="bg-blue-900/60 backdrop-blur-sm text-white shadow-lg">
         <div class="container mx-auto px-4">
             <ul class="flex flex-wrap justify-center items-center">
-                <li><a href="topics.html" class="nav-link block px-5 py-3 hover:bg-blue-700">教改专题</a></li>
-                <li><a href="http://vgms.cqvip.com/lunwen2019/components/template/login.html" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700">维普毕设</a></li>
-                <li><a href="https://www.cctrcloud.net/practice/login.html" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700">融智云考</a></li>
-                <li><a href="https://changjiang.yuketang.cn/web" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700">雨课堂</a></li>
+                <li><a href="topics.html" class="nav-link block px-5 py-3 hover:bg-blue-700/50">教改专题</a></li>
+                <li><a href="http://vgms.cqvip.com/lunwen2019/components/template/login.html" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700/50">维普毕设</a></li>
+                <li><a href="https://www.cctrcloud.net/practice/login.html" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700/50">融智云考</a></li>
+                <li><a href="https://changjiang.yuketang.cn/web" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700/50">雨课堂</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- 主体内容区域 -->
-    <main class="container mx-auto px-4 py-8 mb-12">
+    <!-- 主体内容区域 (已添加flex-grow) -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
         
         <!-- 上半部分：教务通知和教务公告 -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
