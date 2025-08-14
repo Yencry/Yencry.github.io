@@ -31,10 +31,11 @@
             cursor: none;
         }
         .news-list-item {
-            transition: background-color 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
         }
         .news-list-item:hover {
             background-color: rgba(229, 231, 235, 0.5); /* 悬停时半透明背景 */
+            transform: translateY(-2px); /* 悬停时轻微上浮 */
         }
         .nav-link {
             transition: color 0.2s, background-color 0.2s;
@@ -58,8 +59,15 @@
             left: 0;
             top: 0;
             z-index: 9999; /* 确保光标在最顶层 */
-            /* 如果需要，可以微调光标图片的位置，使其热点对准指针 */
-            /* transform: translate(-5px, -5px); */
+        }
+
+        /* --- 卡片载入动画 --- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-card {
+            animation: fadeIn 0.7s ease-out forwards;
         }
     </style>
 </head>
@@ -91,10 +99,10 @@
     <nav class="bg-blue-900/40 backdrop-blur-lg text-white shadow-lg">
         <div class="container mx-auto px-4">
             <ul class="flex flex-wrap justify-center items-center">
-                <li><a href="topics.html" class="nav-link block px-5 py-3 hover:bg-blue-700/50">教改专题</a></li>
-                <li><a href="http://vgms.cqvip.com/lunwen2019/components/template/login.html" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700/50">维普毕设</a></li>
-                <li><a href="https://www.cctrcloud.net/practice/login.html" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700/50">融智云考</a></li>
-                <li><a href="https://changjiang.yuketang.cn/web" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700/50">雨课堂</a></li>
+                <li><a href="topics.html" class="nav-link block px-5 py-3 hover:bg-blue-700/50 rounded-lg">教改专题</a></li>
+                <li><a href="http://vgms.cqvip.com/lunwen2019/components/template/login.html" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700/50 rounded-lg">维普毕设</a></li>
+                <li><a href="https://www.cctrcloud.net/practice/login.html" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700/50 rounded-lg">融智云考</a></li>
+                <li><a href="https://changjiang.yuketang.cn/web" target="_blank" class="nav-link block px-5 py-3 hover:bg-blue-700/50 rounded-lg">雨课堂</a></li>
             </ul>
         </div>
     </nav>
@@ -105,7 +113,7 @@
         <!-- 上半部分：教务通知和教务公告 -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <!-- 教务通知 -->
-            <div class="md:col-span-2 p-6 rounded-lg shadow-lg content-card">
+            <div class="md:col-span-2 p-6 rounded-2xl shadow-xl content-card fade-in-card">
                 <div class="flex justify-between items-center border-b-2 border-blue-500 pb-2 mb-4">
                     <h2 class="text-xl font-bold">教务通知</h2>
                     <a href="notifications.html" class="text-sm text-gray-500 hover:text-blue-600 flex items-center">更多
@@ -122,7 +130,7 @@
                 </ul>
             </div>
             <!-- 教务公告 -->
-            <div class="p-6 rounded-lg shadow-lg content-card">
+            <div class="p-6 rounded-2xl shadow-xl content-card fade-in-card" style="animation-delay: 0.1s;">
                 <div class="flex justify-between items-center border-b-2 border-green-500 pb-2 mb-4">
                     <h2 class="text-xl font-bold">教务公告</h2>
                     <a href="announcements.html" class="text-sm text-gray-500 hover:text-green-600 flex items-center">更多
@@ -141,7 +149,7 @@
         <!-- 下半部分：专题、文件、下载 -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- 教改专题 -->
-            <div class="p-6 rounded-lg shadow-lg content-card">
+            <div class="p-6 rounded-2xl shadow-xl content-card fade-in-card" style="animation-delay: 0.2s;">
                 <div class="flex justify-between items-center border-b-2 border-purple-500 pb-2 mb-4">
                     <h2 class="text-xl font-bold">教改专题</h2>
                     <a href="topics.html" class="text-sm text-gray-500 hover:text-purple-600 flex items-center">更多
@@ -155,7 +163,7 @@
                 </ul>
             </div>
             <!-- 教学管理文件 -->
-            <div class="p-6 rounded-lg shadow-lg content-card">
+            <div class="p-6 rounded-2xl shadow-xl content-card fade-in-card" style="animation-delay: 0.3s;">
                 <div class="flex justify-between items-center border-b-2 border-red-500 pb-2 mb-4">
                     <h2 class="text-xl font-bold">教学管理文件</h2>
                     <a href="documents.html" class="text-sm text-gray-500 hover:text-red-600 flex items-center">更多
@@ -169,7 +177,7 @@
                 </ul>
             </div>
             <!-- 下载中心 -->
-            <div class="p-6 rounded-lg shadow-lg content-card">
+            <div class="p-6 rounded-2xl shadow-xl content-card fade-in-card" style="animation-delay: 0.4s;">
                 <div class="flex justify-between items-center border-b-2 border-yellow-500 pb-2 mb-4">
                     <h2 class="text-xl font-bold">下载中心</h2>
                     <a href="downloads.html" class="text-sm text-gray-500 hover:text-yellow-600 flex items-center">更多
