@@ -12,9 +12,15 @@
     <style>
         /* 添加一些自定义样式和字体 */
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        
         body {
             font-family: 'Noto Sans SC', sans-serif;
-            background-color: #f8f9fa;
+            /* --- 背景图片将通过下方的JavaScript动态设置 --- */
+            background-size: cover; /* 图片覆盖整个背景 */
+            background-position: center; /* 图片居中 */
+            background-attachment: fixed; /* 背景固定，不随页面滚动 */
+            background-repeat: no-repeat; /* 图片不重复 */
+            transition: background-image 1s ease-in-out; /* 为背景切换添加平滑过渡效果 */
         }
         .news-list-item {
             transition: background-color 0.2s ease-in-out;
@@ -24,6 +30,11 @@
         }
         .nav-link {
             transition: color 0.2s, background-color 0.2s;
+        }
+        /* 为内容卡片添加半透明背景，确保文字可读性 */
+        .content-card {
+            background-color: rgba(255, 255, 255, 0.9); /* 90%不透明度的白色背景 */
+            backdrop-filter: blur(2px); /* 为背景添加轻微的模糊效果，现代浏览器支持 */
         }
     </style>
 </head>
@@ -67,7 +78,7 @@
         <!-- 上半部分：教务通知和教务公告 -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <!-- 教务通知 -->
-            <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-md">
+            <div class="md:col-span-2 p-6 rounded-lg shadow-md content-card">
                 <div class="flex justify-between items-center border-b-2 border-blue-500 pb-2 mb-4">
                     <h2 class="text-xl font-bold">教务通知</h2>
                     <a href="notifications.html" class="text-sm text-gray-500 hover:text-blue-600 flex items-center">更多
@@ -84,7 +95,7 @@
                 </ul>
             </div>
             <!-- 教务公告 -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="p-6 rounded-lg shadow-md content-card">
                 <div class="flex justify-between items-center border-b-2 border-green-500 pb-2 mb-4">
                     <h2 class="text-xl font-bold">教务公告</h2>
                     <a href="announcements.html" class="text-sm text-gray-500 hover:text-green-600 flex items-center">更多
@@ -103,7 +114,7 @@
         <!-- 下半部分：专题、文件、下载 -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- 教改专题 -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="p-6 rounded-lg shadow-md content-card">
                 <div class="flex justify-between items-center border-b-2 border-purple-500 pb-2 mb-4">
                     <h2 class="text-xl font-bold">教改专题</h2>
                     <a href="topics.html" class="text-sm text-gray-500 hover:text-purple-600 flex items-center">更多
@@ -117,7 +128,7 @@
                 </ul>
             </div>
             <!-- 教学管理文件 -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="p-6 rounded-lg shadow-md content-card">
                 <div class="flex justify-between items-center border-b-2 border-red-500 pb-2 mb-4">
                     <h2 class="text-xl font-bold">教学管理文件</h2>
                     <a href="documents.html" class="text-sm text-gray-500 hover:text-red-600 flex items-center">更多
@@ -131,7 +142,7 @@
                 </ul>
             </div>
             <!-- 下载中心 -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="p-6 rounded-lg shadow-md content-card">
                 <div class="flex justify-between items-center border-b-2 border-yellow-500 pb-2 mb-4">
                     <h2 class="text-xl font-bold">下载中心</h2>
                     <a href="downloads.html" class="text-sm text-gray-500 hover:text-yellow-600 flex items-center">更多
@@ -148,7 +159,7 @@
     </main>
     
     <!-- 友情链接 -->
-    <section class="bg-gray-100 py-8">
+    <section class="py-8" style="background-color: rgba(243, 244, 246, 0.9);">
         <div class="container mx-auto px-4">
             <h2 class="text-center text-xl font-semibold mb-6">网站导航</h2>
             <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-gray-600">
@@ -172,6 +183,18 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // --- 随机背景图片 ---
+            // 1. 设置您在images文件夹中图片的总数量
+            const totalImages = 3; // <--- 修改这里的数字，例如您有5张图片，就写 5
+
+            // 2. 随机生成一个图片编号 (从1到totalImages)
+            const imageNumber = Math.floor(Math.random() * totalImages) + 1;
+
+            // 3. 构建图片路径并设置为背景
+            const imageUrl = `images/${imageNumber}.png`;
+            document.body.style.backgroundImage = `url('${imageUrl}')`;
+
+
             // --- 日期动态生成 ---
             function formatDate(date) {
                 const month = String(date.getMonth() + 1).padStart(2, '0');
