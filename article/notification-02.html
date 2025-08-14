@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 文章标题已更新 -->
+    <title>关于「白鹭之章」第二幕：优秀学生转专业遴选通知 - 神里凌华大学教务处</title>
+    <link rel="icon" href="../avatar/avatar.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            transition: background-image 1s ease-in-out;
+            cursor: none;
+        }
+        a, button { cursor: none; }
+        .content-card {
+            background-color: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .custom-cursor {
+            position: fixed;
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+            pointer-events: none;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+        }
+        /* 文章内容样式 */
+        .article-content h1 { font-size: 1.875rem; font-weight: 700; margin-bottom: 0.5rem; text-align: center; }
+        .article-content .meta { font-size: 0.875rem; color: #6b7280; margin-bottom: 2rem; text-align: center; border-bottom: 1px solid #e5e7eb; padding-bottom: 1rem;}
+        .article-content h3 { font-size: 1.125rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .article-content p { margin-bottom: 1.25rem; line-height: 1.75; }
+        .article-content .indented-p { margin-left: 2rem; }
+    </style>
+</head>
+<body class="text-gray-800 flex flex-col min-h-screen">
+
+    <div id="custom-cursor" class="custom-cursor"></div>
+
+    <!-- 页头 (和主页一致) -->
+    <header class="bg-white/75 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="../avatar/avatar.png" alt="校徽" class="w-12 h-12 rounded-full">
+                <a href="../index.html" class="text-2xl font-bold text-gray-800">神里凌华大学教务处</a>
+            </div>
+            <div class="flex items-center space-x-4 text-sm text-gray-600">
+                <a href="https://kau.viatin.buzz/" target="_blank" class="hover:text-blue-600">学生工作部</a>
+                <span>|</span>
+                <a href="https://github.com/Yencry/Yencry.github.io/issues" target="_blank" class="hover:text-blue-600">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 文章主体内容 -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <div class="max-w-4xl mx-auto p-8 md:p-12 rounded-2xl shadow-xl content-card article-content">
+            
+            <!-- 文章内容已更新并实现随机化 -->
+            <h1>关于「白鹭之章」第二幕：优秀学生转专业遴选通知</h1>
+            <div class="meta">
+                <span>作者：神里凌华大学教务处</span> | 
+                <span>时间：<span id="publish-date"></span></span> | 
+                <span>点击数：<span id="click-count"></span></span>
+            </div>
+            
+            <p>
+                各社奉行、<span id="student-grade"></span>级本科学生：
+            </p>
+            <p>
+                根据《神里凌华大学本科生转专业管理办法》（白鹭之章）文件要求，现对<span id="student-grade-2"></span>级优秀本科生校内第二次选择专业学生自主报名工作安排如下：
+            </p>
+            
+            <p>
+                1、申请转专业的学生按照《神里凌华大学本科生转专业管理办法》（白鷺之章）的要求，参考《各专业可接收<span id="student-grade-3"></span>级转专业学生名额汇总表》填写《神里凌华大学本科生转专业申请表》，经所在社奉行审核同意后，于<span id="deadline-1" class="font-semibold text-blue-600"></span>前将申请表交至拟转入社奉行。
+            </p>
+            <p>
+                2、各社奉行按照申请转专业的基本条件进行资格审查，审核完毕后将《神里凌华大学本科生转专业申请表》与《神里凌华大学本科生转专业社奉行汇总表》的电子版和纸质版，于<span id="deadline-2" class="font-semibold text-blue-600"></span>前报教务处学籍管理部门，纸质版要求社奉行负责人签字并加盖公章。
+            </p>
+            
+            <div class="text-right mt-8">
+                <p>神里凌华大学教务处</p>
+                <p><span id="publish-date-2"></span></p>
+            </div>
+            <!-- 文章内容结束 -->
+
+        </div>
+    </main>
+
+    <!-- 页脚 (和主页一致) -->
+    <footer class="bg-white/75 backdrop-blur-sm shadow-inner mt-auto">
+        <div class="container mx-auto px-4 py-5">
+            <div class="text-center text-sm text-gray-500 pt-5 border-t border-gray-200">
+                <p>Copyright &copy; 2024 神里凌华大学教务处</p>
+                <p class="mt-1">地址: 稻妻城天领奉行府内 | 邮编: <span id="postal-code"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- 随机化内容生成 ---
+            
+            // 随机数生成器
+            const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+            // 生成随机日期
+            const randomDate = (start, end) => new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+            
+            // 格式化日期为 YYYY年MM月DD日
+            const formatDate = (date) => `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
+
+            // 1. 生成年级
+            const currentYear = new Date().getFullYear();
+            const studentGrade = currentYear - 1;
+
+            // 2. 生成发布日期
+            const publishDate = randomDate(new Date(currentYear, 6, 15), new Date(currentYear, 6, 30)); // 7月15-30日
+            const formattedPublishDate = formatDate(publishDate);
+
+            // 3. 生成截止日期
+            const deadline1 = new Date(publishDate.getTime());
+            deadline1.setDate(deadline1.getDate() + getRandomInt(25, 35));
+            const formattedDeadline1 = formatDate(deadline1);
+
+            const deadline2 = new Date(deadline1.getTime());
+            deadline2.setDate(deadline2.getDate() + getRandomInt(5, 10));
+            const formattedDeadline2 = formatDate(deadline2);
+
+            // 4. 生成其他随机项
+            const clickCount = getRandomInt(1000, 3000);
+
+            // --- 填充内容到页面 ---
+            const setText = (id, text) => {
+                const el = document.getElementById(id);
+                if (el) el.textContent = text;
+            };
+            
+            setText('publish-date', formattedPublishDate);
+            setText('publish-date-2', formattedPublishDate);
+            setText('click-count', clickCount);
+            setText('student-grade', studentGrade);
+            setText('student-grade-2', studentGrade);
+            setText('student-grade-3', studentGrade);
+            setText('deadline-1', formattedDeadline1);
+            setText('deadline-2', formattedDeadline2);
+            
+            // --- 其他页面功能 ---
+            // 随机背景
+            const totalImages = 3; 
+            const imageNumber = Math.floor(Math.random() * totalImages) + 1;
+            const imageUrl = `../images/${imageNumber}.jpg`; 
+            document.body.style.backgroundImage = `url('${imageUrl}')`;
+
+            // 随机邮编
+            function generateJapanesePostalCode() {
+                const firstPart = String(getRandomInt(100, 999));
+                const secondPart = String(getRandomInt(0, 9999)).padStart(4, '0');
+                return `〒${firstPart}-${secondPart}`;
+            }
+            setText('postal-code', generateJapanesePostalCode());
+
+            // 自定义光标
+            const cursor = document.getElementById('custom-cursor');
+            if (cursor) {
+                cursor.style.backgroundImage = 'url(../cursors/AppStarting.gif)';
+                document.addEventListener('mousemove', function(e) {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
