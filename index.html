@@ -35,15 +35,15 @@
         }
         /* 为内容卡片添加更明显的毛玻璃特效 */
         .content-card {
-            background-color: rgba(255, 255, 255, 0.75); /* 降低不透明度以增强效果 */
-            backdrop-filter: blur(8px); /* 增加模糊半径 */
-            -webkit-backdrop-filter: blur(8px); /* 兼容Safari浏览器 */
+            background-color: rgba(255, 255, 255, 0.65); /* 调整了透明度 */
+            backdrop-filter: blur(12px); /* 增加了模糊半径 */
+            -webkit-backdrop-filter: blur(12px); /* 兼容Safari浏览器 */
             border: 1px solid rgba(255, 255, 255, 0.2); /* 添加细微边框增加质感 */
         }
         .footer-card {
-            background-color: rgba(243, 244, 246, 0.75); /* 友情链接区域的毛玻璃效果 */
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
+            background-color: rgba(243, 244, 246, 0.65); /* 友情链接区域的毛玻璃效果 */
+            backdrop-filter: blur(12px); /* 增加了模糊半径 */
+            -webkit-backdrop-filter: blur(12px);
             border-top: 1px solid rgba(255, 255, 255, 0.2);
         }
     </style>
@@ -84,7 +84,7 @@
     </nav>
 
     <!-- 主体内容区域 -->
-    <main class="container mx-auto px-4 py-8">
+    <main class="container mx-auto px-4 py-8 mb-12">
         
         <!-- 上半部分：教务通知和教务公告 -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
