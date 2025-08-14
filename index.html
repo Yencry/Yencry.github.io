@@ -1,12 +1,422 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+<!DOCTYPE html><html><head><title>沈阳理工大学教务处</title><META Name="keywords" Content="沈阳理工大学教务处" />
+
+
+
+
+
+<meta charset="utf-8"><link href="css/style.css" rel="stylesheet" type="text/css"><link href="css/publice.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="js/min.js"></script><script type="text/javascript" src="js/bd.js"></script><script type="text/javascript" src="js/superslide.js"></script><script type="text/javascript" src="js/soChange.js"></script><script type="text/javascript" src="js/index.js"></script><script type="text/javascript">
+    $(function(){
+        $(".mainmenu dl").hide();
+        $("li.mainmenu").hover(function(){
+            $(this).find("dl").stop(true,true);
+            $(this).find("dl").slideDown();
+        },function(){
+            $(this).find("dl").stop(true,true);
+            $(this).find("dl").slideUp();
+        });
+    })
+</script>
+
+<!--Announced by Visual SiteBuilder 9-->
+<link rel="stylesheet" type="text/css" href="_sitegray/_sitegray_d.css" />
+<script language="javascript" src="_sitegray/_sitegray.js"></script>
+<!-- CustomerNO:77656262657232307973475c53575742000000034156 -->
+<link rel="stylesheet" type="text/css" href="index.vsb.css" />
+<script type="text/javascript" src="/system/resource/js/counter.js"></script>
+<script type="text/javascript">_jsq_(1033,'/index.jsp',-1,1615111502)</script>
 </head>
-<body>
-    <h1>你好，世界！</h1>
-    <p>欢迎来到我的第一个个人网站。这里是使用 GitHub Pages 搭建的。</p>
-</body>
-</html>
+<body><!--top s-->
+<div class="topWrap clearfix">
+<div class="topDiv">
+<!-- 网站logo图片地址请在本组件"内容配置-网站logo"处填写 -->
+<div class="logo">
+<a href="index.htm"><img src="images/logo.png"></a>
+</div>
+<div class="topR fr">
+<script language="javascript">
+function dosuba254074a()
+{
+    try{
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.indexOf("msie 8")>-1)
+        {
+            window.external.AddToFavoritesBar(document.location.href,document.title,"");//IE8
+        }else if(ua.toLowerCase().indexOf("rv:")>-1)
+        {
+            window.external.AddToFavoritesBar(document.location.href,document.title,"");//IE11+
+        }else{
+            if (document.all) 
+            {
+                window.external.addFavorite(document.location.href, document.title);
+            }else if(window.sidebar)
+            {
+                window.sidebar.addPanel( document.title, document.location.href, "");//firefox
+            }
+            else
+            {
+                alert(hotKeysa254074a());
+            }
+        }
+
+    }
+    catch (e){alert("无法自动添加到收藏夹，请使用 Ctrl + d 手动添加");}
+}
+function hotKeysa254074a() 
+{
+    var ua = navigator.userAgent.toLowerCase(); 
+    var str = "";    
+    var isWebkit = (ua.indexOf('webkit') != - 1); 
+    var isMac = (ua.indexOf('mac') != - 1);     
+    if (ua.indexOf('konqueror') != - 1) 
+    {  
+        str = 'CTRL + B'; // Konqueror   
+    } 
+    else if (window.home || isWebkit || isMac) 
+    {        
+        str = (isMac ? 'Command/Cmd' : 'CTRL') + ' + D'; // Netscape, Safari, iCab, IE5/Mac   
+    }
+    return ((str) ? '无法自动添加到收藏夹，请使用' + str + '手动添加' : str);
+}
+function setHomepagea254074a()
+{
+    var url = document.location.href;
+    if (document.all)
+    {
+        document.body.style.behavior='url(#default#homepage)';
+        document.body.setHomePage(url);
+    }
+    else if (window.sidebar)
+    {
+        if(window.netscape)
+        {
+             try{
+                  netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+             }catch (e){
+                   alert("该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true");
+             }
+        }
+    var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components. interfaces.nsIPrefBranch);
+    prefs.setCharPref('browser.startup.homepage',url);
+    }
+    else
+    {
+        alert("浏览器不支持自动设为首页，请手动设置");
+    }
+}
+</script>
+
+
+
+
+
+<div class="topR_t fr">
+
+    <a href="javascript:setHomepagea254074a()" style="TEXT-DECORATION: none;">设为首页</a>
+   |
+
+    <a onclick="javascript:dosuba254074a();" href="#" style="TEXT-DECORATION: none;">加入收藏</a>
+   |
+
+    <a href="lxwm.htm">联系我们</a>
+   
+
+</div>
+<script type="text/javascript">
+    function _nl_ys_check_2(){
+        
+        var keyword = document.getElementById('showkeycode254051_2').value;
+        if(keyword==null||keyword==""){
+            alert("请输入关键字搜索");
+            return false;
+        }
+        if(window.toFF==1)
+        {
+            document.getElementById("lucenenewssearchkey254051").value = Simplized(keyword );
+        }else
+        {
+            document.getElementById("lucenenewssearchkey254051").value = keyword;            
+        }
+        var  base64 = new Base64();
+        document.getElementById("lucenenewssearchkey254051").value = base64.encode(document.getElementById("lucenenewssearchkey254051").value);
+        new VsbFormFunc().disableAutoEnable(document.getElementById("showkeycode254051_2"));
+        return true;
+    } 
+    function submitForm()
+    {
+        document.getElementById("au2a").submit();
+    }
+</script>
+<script type="text/javascript">
+				function test3()
+				{
+					var tempStr=document.getElementById('showkeycode254051_2').value;
+					if(tempStr=="请输入关键字搜索")
+					{
+						document.getElementById('showkeycode254051_2').value="";
+					}
+				}
+				function test4()
+				{
+					var tempStr=document.getElementById('showkeycode254051_2').value;
+					if(tempStr=="")
+					{
+						document.getElementById('showkeycode254051_2').value="请输入关键字搜索";
+					}
+				}
+			</script>
+<div class="Search">
+<form action="search.jsp?wbtreeid=1033" method="post" id="au2a" name="au2a" onsubmit="return _nl_ys_check_2()">
+ <input type="hidden" id="lucenenewssearchkey254051" name="lucenenewssearchkey" value=""><input type="hidden" id="_lucenesearchtype254051" name="_lucenesearchtype" value="1"><input type="hidden" id="searchScope254051" name="searchScope" value="1">
+ <input type="text" value="请输入关键字搜索" name="showkeycode" class="search_text" onfocus="test3()" onblur="test4()" id="showkeycode254051_2" />
+                <div class="fdj fr"> <input type="submit" class="button pngFix" value="" style="cursor: hand"></div>
+</form>
+</div><script language="javascript" src="/system/resource/js/base64.js"></script><script language="javascript" src="/system/resource/js/formfunc.js"></script>
+</div></div></div><!--nav--><div class="navWrap  clearfix">
+    <div class="nav">
+    <ul>
+            <li>
+            <a class="link" href="jgzt.htm">教改专题</a>
+                        
+        </li>
+        <li class="mainmenu">
+            <a class="link" href="kcsz.htm">课程思政</a>
+        </li>
+        <li class="mainmenu">
+            <a class="link" href="http://10.5.1.211:8082/" target="_blank">实验室安全</a>
+        </li>
+        <li class="mainmenu">
+            <a class="link" href="https://cloud.fanyu.com/organ/lib/sylu" target="_blank">维普毕设</a>
+        </li>
+        <li class="mainmenu">
+            <a class="link" href="https://www.cctrcloud.net/" target="_blank">融智云考</a>
+        </li>
+        <li class="mainmenu">
+            <a class="link" href="https://changjiang.yuketang.cn/" target="_blank">雨课堂</a>
+        </li>
+        <li class="mainmenu">
+            <a class="link" href="https://sylu.mh.chaoxing.com" target="_blank">超星</a>
+        </li>
+        <li class="mainmenu">
+            <a class="link" href="https://robot.chaoxing.com/coze/web?unitId=590&robotId=887958b3b38f4e2492ab0b74c871eba7" target="_blank">智能助手</a>
+        </li>
+        <li class="mainmenu">
+            <a class="link" href="https://jxw.sylu.edu.cn" target="_blank">教务管理系统</a>
+        </li>
+     
+    </ul>
+</div>
+</div>
+<script type="text/javascript">
+
+    $(".mainmenu dl").hide();
+
+</script><!--container-->
+<div class="vsb-box">
+<div class="vsb-container container clearfix" containerid="2" columns="6"><!--新闻信息6-->
+<div class="vsb-space new_inforBox new_inforBox1 new_inforBoxb fl" columns="4">
+<div class="dynamic dynamicd">
+<h2>教务通知</h2><span><a href="jwtz.htm" onfocus="undefined"><img src="temp/more.png"></a></span></div>
+<div class="clear"></div>
+
+<div class="newBox">
+
+<div class="tab_box"><script language="javascript" src="/system/resource/js/dynclicks.js"></script><script language="javascript" src="/system/resource/js/centerCutImg.js"></script><script language="javascript" src="/system/resource/js/ajax.js"></script><div>
+                             <ul>
+<li><a href="info/1115/5635.htm" target="_blank" title="关于2025-2026学年第一学期学生网上选课的通知"><span>[08-01]</span><em>关于2025-2026学年第一学期学生网上选课的通知</em></a></li>
+<li><a href="info/1117/5633.htm" target="_blank" title="关于2024级优秀本科生校内第二次选择专业的通知"><span>[07-22]</span><em>关于2024级优秀本科生校内第二次选择专业的通知</em></a></li>
+<li><a href="info/1116/5602.htm" target="_blank" title="关于做好我校2025年下半年全国计算机等级考试（NCRE）报名工作的通知"><span>[06-23]</span><em>关于做好我校2025年下半年全国计算机等级考试（NCRE）...</em></a></li>
+<li><a href="info/1116/5583.htm" target="_blank" title="2024-2025-2环境与化学工程学院期末考试时间安排（六）"><span>[06-16]</span><em>2024-2025-2环境与化学工程学院期末考试时间安排（六）</em></a></li>
+<li><a href="info/1116/5582.htm" target="_blank" title="2024-2025-2经济管理学院重修及期末考试安排（17周）"><span>[06-16]</span><em>2024-2025-2经济管理学院重修及期末考试安排（17周）</em></a></li>
+<li><a href="info/1116/5579.htm" target="_blank" title="2024-2025-2外国语学院专业期末考试时间安排"><span>[06-10]</span><em>2024-2025-2外国语学院专业期末考试时间安排</em></a></li>
+<li><a href="info/1116/5578.htm" target="_blank" title="2024-2025-2理学院专业课期末（部分重修跟班）考试安排（二）"><span>[06-09]</span><em>2024-2025-2理学院专业课期末（部分重修跟班）考试安排...</em></a></li>
+<li><a href="info/1116/5577.htm" target="_blank" title="2024-2025-2环境与化学工程学院期末考试时间安排（五）"><span>[06-09]</span><em>2024-2025-2环境与化学工程学院期末考试时间安排（五）</em></a></li>
+<li><a href="info/1116/5576.htm" target="_blank" title="2024-2025-2环境与化学工程学院期末考试时间安排（四）"><span>[06-09]</span><em>2024-2025-2环境与化学工程学院期末考试时间安排（四）</em></a></li>
+
+                                 
+                             </ul>
+                        </div><script>_showDynClickBatch(['dynclicks_u4_5635','dynclicks_u4_5633','dynclicks_u4_5602','dynclicks_u4_5583','dynclicks_u4_5582','dynclicks_u4_5579','dynclicks_u4_5578','dynclicks_u4_5577','dynclicks_u4_5576'],[5635,5633,5602,5583,5582,5579,5578,5577,5576],"wbnews", 1615111502)</script>
+
+</div></div></div>
+<div class="vsb-space informBox informBoxb informBoxb2 fl" columns="2">
+<div class="dynamic dynamicd" style="width:470px!important;">
+<h2>教务公告</h2><span><a href="jwgg.htm" onfocus="undefined"><img src="temp/more.png"></a></span></div>
+<div class="clear"></div>
+
+<div id="tab">
+
+
+<div class="tab_box"><div>
+                             <ul>
+<li><a href="info/1119/5586.htm" target="_blank" title="2025-2026学年校历"><span>[06-18]</span><em>2025-2026学年校历</em></a></li>
+<li><a href="info/1119/4588.htm" target="_blank" title="沈阳理工大学作息时间表"><span>[09-14]</span><em>沈阳理工大学作息时间表</em></a></li>
+<li><a href="info/1119/5619.htm" target="_blank" title="2024-2025-2学期第20周实验日程"><span>[07-04]</span><em>2024-2025-2学期第20周实验日程</em></a></li>
+<li><a href="info/1119/5615.htm" target="_blank" title="2024-2025-2学期第19周实验日程"><span>[07-01]</span><em>2024-2025-2学期第19周实验日程</em></a></li>
+<li><a href="info/1119/5611.htm" target="_blank" title="2024-2025-2学期第18周实验日程"><span>[06-24]</span><em>2024-2025-2学期第18周实验日程</em></a></li>
+<li><a href="info/1119/5595.htm" target="_blank" title="2024-2025-2学期成绩奖励公示-2（补充2）"><span>[06-19]</span><em>2024-2025-2学期成绩奖励公示-2（补充2）</em></a></li>
+<li><a href="info/1119/5593.htm" target="_blank" title="2024-2025-2成绩奖励公示-2（补充1）"><span>[06-18]</span><em>2024-2025-2成绩奖励公示-2（补充1）</em></a></li>
+<li><a href="info/1119/5587.htm" target="_blank" title="2024-2025-2学期第17周实验日程"><span>[06-16]</span><em>2024-2025-2学期第17周实验日程</em></a></li>
+<li><a href="info/1119/5581.htm" target="_blank" title="2024-2025-2学期成绩奖励公示-2（补充）"><span>[06-12]</span><em>2024-2025-2学期成绩奖励公示-2（补充）</em></a></li>
+
+                                 
+                             </ul>
+                        </div><script>_showDynClickBatch(['dynclicks_u5_5586','dynclicks_u5_4588','dynclicks_u5_5619','dynclicks_u5_5615','dynclicks_u5_5611','dynclicks_u5_5595','dynclicks_u5_5593','dynclicks_u5_5587','dynclicks_u5_5581'],[5586,4588,5619,5615,5611,5595,5593,5587,5581],"wbnews", 1615111502)</script>
+</div></div></div></div>
+<div class="vsb-container container clearfix" containerid="2" columns="6"><!--通知公告-->
+<div class="vsb-space informBox informBoxd informBoxc1 fl" columns="2">                <div class="dynamic dynamicb dynamice"><h2>教改专题</h2><span><a href="jgzt.htm"><img src="img/w_more.png"></a></span></div>
+                <div class="infor_list infor_lista">
+                    <ul class="dynamic_list dynamic_listb dynamic_liste fr">
+<li><a href="info/1131/5636.htm" target="_blank" title="关于组织开展推荐辽宁省高校课程思政建设专家咨询委员会的通知"><span>08/10</span><em>关于组织开展推荐辽宁省高校课程思政建设专家咨...</em></a></li>
+<li><a href="info/1130/5634.htm" target="_blank" title="关于2025年度拟增设本科专业的公示"><span>07/24</span><em>关于2025年度拟增设本科专业的公示</em></a></li>
+<li><a href="info/1134/5632.htm" target="_blank" title="关于开展2025年度辽宁省教育科研中青年骨干推荐申报遴选工作的通知"><span>07/10</span><em>关于开展2025年度辽宁省教育科研中青年骨干推荐...</em></a></li>
+<li><a href="info/1133/5620.htm" target="_blank" title="关于第二十九届辽宁省教育教学信息化交流活动遴选推荐作品的公示"><span>07/07</span><em>关于第二十九届辽宁省教育教学信息化交流活动遴...</em></a></li>
+<li><a href="info/1131/5616.htm" target="_blank" title="关于2025-2026学年第一学期普通高等学校大学生在线学习跨校修读学分申报工作的通知"><span>07/02</span><em>关于2025-2026学年第一学期普通高等学校大学生在...</em></a></li>
+<li><a href="info/1134/5610.htm" target="_blank" title="关于公布2025年第二季度学校产学合作协同育人项目立项名单的通知"><span>07/01</span><em>关于公布2025年第二季度学校产学合作协同育人项...</em></a></li>
+<li><a href="info/1134/5599.htm" target="_blank" title="关于辽宁省教育科学“十四五”规划2025年度课题、教师队伍建设研究专项课题补充申报的公示"><span>06/20</span><em>关于辽宁省教育科学“十四五”规划2025年度课题...</em></a></li>
+<li><a href="info/1133/5594.htm" target="_blank" title="关于开展2025年沈阳理工大学本科教学名师遴选工作的通知"><span>06/18</span><em>关于开展2025年沈阳理工大学本科教学名师遴选工...</em></a></li>
+<li><a href="info/1134/5592.htm" target="_blank" title="关于辽宁省教育科学“十四五”规划2025年度立项课题申报的公示"><span>06/18</span><em>关于辽宁省教育科学“十四五”规划2025年度立项...</em></a></li>
+
+                     </ul>
+                 </div>
+<script>_showDynClickBatch(['dynclicks_u6_5636','dynclicks_u6_5634','dynclicks_u6_5632','dynclicks_u6_5620','dynclicks_u6_5616','dynclicks_u6_5610','dynclicks_u6_5599','dynclicks_u6_5594','dynclicks_u6_5592'],[5636,5634,5632,5620,5616,5610,5599,5594,5592],"wbnews", 1615111502)</script>
+</div><!--通知公告-->
+<div class="vsb-space informBox informBoxd informBoxc1 fl" columns="2">                <div class="dynamic dynamicb dynamice"><h2>教学管理文件</h2><span><a href="jxglwj.htm"><img src="img/w_more.png"></a></span></div>
+                <div class="infor_list infor_lista">
+                    <ul class="dynamic_list dynamic_listb dynamic_liste fr">
+<li><a href="info/1121/4551.htm" target="_blank" title="关于课程重修的补充规定"><span>07/02</span><em>关于课程重修的补充规定</em></a></li>
+<li><a href="info/1121/4550.htm" target="_blank" title="选课管理办法"><span>07/02</span><em>选课管理办法</em></a></li>
+<li><a href="info/1121/4546.htm" target="_blank" title="本科生转专业管理办法"><span>07/02</span><em>本科生转专业管理办法</em></a></li>
+<li><a href="info/1121/4536.htm" target="_blank" title="考试违纪和考试作弊行为的认定及处理办法"><span>07/02</span><em>考试违纪和考试作弊行为的认定及处理办法</em></a></li>
+<li><a href="info/1121/5541.htm" target="_blank" title="沈阳理工大学鼓励本科生参加课外活动（竞赛）的有关规定"><span>05/09</span><em>沈阳理工大学鼓励本科生参加课外活动（...</em></a></li>
+<li><a href="info/1121/5540.htm" target="_blank" title="沈阳理工大学本科实践教学经费管理办法"><span>05/09</span><em>沈阳理工大学本科实践教学经费管理办法</em></a></li>
+<li><a href="info/1121/5399.htm" target="_blank" title="沈阳理工大学本科生学籍管理规定"><span>10/29</span><em>沈阳理工大学本科生学籍管理规定</em></a></li>
+<li><a href="info/1121/4545.htm" target="_blank" title="更改成绩管理办法"><span>07/02</span><em>更改成绩管理办法</em></a></li>
+<li><a href="info/1121/4544.htm" target="_blank" title="藏族成绩管理办法"><span>07/02</span><em>藏族成绩管理办法</em></a></li>
+
+                     </ul>
+                 </div>
+<script>_showDynClickBatch(['dynclicks_u7_4551','dynclicks_u7_4550','dynclicks_u7_4546','dynclicks_u7_4536','dynclicks_u7_5541','dynclicks_u7_5540','dynclicks_u7_5399','dynclicks_u7_4545','dynclicks_u7_4544'],[4551,4550,4546,4536,5541,5540,5399,4545,4544],"wbnews", 1615111502)</script>
+</div><!--通知公告-->
+<div class="vsb-space informBox informBoxd informBoxc1 fl" columns="2">                <div class="dynamic dynamicb dynamice"><h2>下载中心</h2><span><a href="xzzx/jw.htm"><img src="img/w_more.png"></a></span></div>
+                <div class="infor_list infor_lista">
+                    <ul class="dynamic_list dynamic_listb dynamic_liste fr">
+<li><a href="info/1123/5044.htm" target="_blank" title="调整教学计划审批表"><span>10/26</span><em>调整教学计划审批表</em></a></li>
+<li><a href="info/1125/4527.htm" target="_blank" title="更改成绩报告审批表"><span>07/02</span><em>更改成绩报告审批表</em></a></li>
+<li><a href="info/1127/4525.htm" target="_blank" title="教务处工作日程安排及各项工作流程"><span>07/02</span><em>教务处工作日程安排及各项工作流程</em></a></li>
+<li><a href="info/1124/4523.htm" target="_blank" title="缓考申请表"><span>07/02</span><em>缓考申请表</em></a></li>
+<li><a href="info/1123/4517.htm" target="_blank" title="学生调整课程申请表"><span>07/02</span><em>学生调整课程申请表</em></a></li>
+<li><a href="info/1123/5465.htm" target="_blank" title="各学院教务管理办公室联系方式"><span>02/22</span><em>各学院教务管理办公室联系方式</em></a></li>
+<li><a href="info/1124/4626.htm" target="_blank" title="试卷审批表"><span>11/01</span><em>试卷审批表</em></a></li>
+<li><a href="info/1124/4625.htm" target="_blank" title="试卷印刷通知单"><span>11/01</span><em>试卷印刷通知单</em></a></li>
+<li><a href="info/1126/4569.htm" target="_blank" title="教师备课教材领用单"><span>08/29</span><em>教师备课教材领用单</em></a></li>
+
+                     </ul>
+                 </div>
+<script>_showDynClickBatch(['dynclicks_u8_5044','dynclicks_u8_4527','dynclicks_u8_4525','dynclicks_u8_4523','dynclicks_u8_4517','dynclicks_u8_5465','dynclicks_u8_4626','dynclicks_u8_4625','dynclicks_u8_4569'],[5044,4527,4525,4523,4517,5465,4626,4625,4569],"wbnews", 1615111502)</script>
+</div></div>
+<div class="vsb-container container clearfix" containerid="2" columns="6">
+<div class="vsb-space content contentf" columns="6">
+<div><script language="javascript" src="/system/resource/js/openlink.js"></script><div class="link_one clearfix">
+            <dl>
+                <dt>网站导航</dt>
+<dd>
+
+<a href="https://www.chsi.com.cn" target="_blank" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1615111502, 62618)">学信网</a>
+
+
+
+<a href="http://www.cdgdc.edu.cn" target="_blank" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1615111502, 62619)">学位网</a>
+
+
+
+<a href="http://www.upln.cn" target="_blank" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1615111502, 62620)">辽宁省本科教学网</a>
+
+
+
+<a href="http://looc.fanya.chaoxing.com" target="_blank" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1615111502, 62621)">酷学辽宁</a>
+
+
+
+<a href="https://www.yuketang.cn/" target="_blank" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1615111502, 62622)">雨课堂</a>
+
+
+
+<a href="https://lnmooc.yuketang.cn" target="_blank" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1615111502, 62623)">学堂在线</a>
+
+
+
+<a href="https://www.zhihuishu.com" target="_blank" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1615111502, 62624)">智慧树</a>
+
+
+
+<a href="http://erya.mooc.chaoxing.com" target="_blank" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1615111502, 62625)">超星尔雅</a>
+
+
+<a href="https://www.icourse163.org" target="_blank" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1615111502, 62626)" class="cur">中国大学MOOC</a>
+
+
+    </dd>         
+            </dl>
+        </div>
+
+
+</div></div></div></div><!--foot-->
+<div class="footWrap clearfix">
+<div class="footDiv_one">
+<div class="foot_one"><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+<p>Copyright (C) 沈阳理工大学教务处 2012 地址:辽宁省沈阳市浑南新区南屏中路6号 邮编:110159</p>
+
+</div>
+
+</div></div><script type="text/javascript">
+
+$(function(){
+    $(".select").each(function(){
+        var s=$(this);
+        var z=parseInt(s.css("z-index"));
+        var dt=$(this).children("dt");
+        var dd=$(this).children("dd");
+        var _show=function(){dd.slideDown(200);dt.addClass("cur");s.css("z-index",z+1);};   //展开效果
+        var _hide=function(){dd.slideUp(200);dt.removeClass("cur");s.css("z-index",z);};    //关闭效果
+        dt.click(function(){dd.is(":hidden")?_show():_hide();});
+        dd.find("a").click(function(){dt.html($(this).html());_hide();});     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
+        $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hide():"";});
+    })
+});
+</script><script type="text/javascript">
+$(function () {
+//切换对象为其他，这里为包含图片和标题的层
+    $('#change_32 div.changeDiv').soChange({//对象指向层，层内包含图片及标题
+        thumbObj:'#change_32 .ul_change_a2 span',
+        thumbNowClass:'on'//自定义导航对象当前class为on
+    });
+});
+</script><script type="text/javascript">
+function setContentTab(name, curr, n) {
+    for (i = 1; i <= n; i++) {
+        var menu = document.getElementById(name + i);
+        var cont = document.getElementById("con_" + name + "_" + i);
+    if(menu != null)
+    {
+        menu.className = i == curr ? "up" : "";
+    }
+        if (i == curr) {
+      if(cont != null)
+        {
+            cont.style.display = "block";
+        }
+        } else {
+        if(cont != null)
+    {
+            cont.style.display = "none";
+    }
+        }
+    }
+}
+</script><script type="text/javascript">
+$(".pic ul li").hover(function(){
+    $(this).stop(true).animate({width:"823px"},500).siblings().stop(true).animate({width:"50px"},500);
+});
+</script>
+
+
+</body></html>
