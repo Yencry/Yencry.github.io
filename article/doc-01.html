@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 文章标题已更新 -->
+    <title>本科生转专业管理办法（白鹭之章） - 神里凌华大学教务处</title>
+    <link rel="icon" href="../avatar/avatar.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            transition: background-image 1s ease-in-out;
+            cursor: none;
+        }
+        a, button { cursor: none; }
+        .content-card {
+            background-color: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .custom-cursor {
+            position: fixed;
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+            pointer-events: none;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+        }
+        /* 文章内容样式 */
+        .article-content h1 { font-size: 1.875rem; font-weight: 700; margin-bottom: 0.5rem; text-align: center; }
+        .article-content h2 { font-size: 1.5rem; font-weight: 600; text-align: center; margin-bottom: 2rem; }
+        .article-content .meta { font-size: 0.875rem; color: #6b7280; margin-bottom: 2rem; text-align: center; border-bottom: 1px solid #e5e7eb; padding-bottom: 1rem;}
+        .article-content h3 { font-size: 1.125rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .article-content p { margin-bottom: 1.25rem; line-height: 1.75; }
+        .article-content .indented-p { margin-left: 2rem; }
+        .article-content .signature { text-align: right; margin-top: 3rem; }
+    </style>
+</head>
+<body class="text-gray-800 flex flex-col min-h-screen">
+
+    <div id="custom-cursor" class="custom-cursor"></div>
+
+    <!-- 页头 (和主页一致) -->
+    <header class="bg-white/75 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="../avatar/avatar.png" alt="校徽" class="w-12 h-12 rounded-full">
+                <a href="../index.html" class="text-2xl font-bold text-gray-800">神里凌华大学教务处</a>
+            </div>
+            <div class="flex items-center space-x-4 text-sm text-gray-600">
+                <a href="https://kau.viatin.buzz/" target="_blank" class="hover:text-blue-600">学生工作部</a>
+                <span>|</span>
+                <a href="https://github.com/Yencry/Yencry.github.io/issues" target="_blank" class="hover:text-blue-600">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 文章主体内容 -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <div class="max-w-4xl mx-auto p-8 md:p-12 rounded-2xl shadow-xl content-card article-content">
+            
+            <!-- 文章内容已更新并实现随机化 -->
+            <h1>关于印发《神里凌华大学本科生转专业管理办法》的通知</h1>
+            <div class="meta">
+                <span>作者：神里凌华大学教务处</span> | 
+                <span>时间：<span id="publish-date"></span></span> | 
+                <span>点击数：<span id="click-count"></span></span>
+            </div>
+            
+            <p>各社奉行及相关部门：</p>
+            <p class="indented-p">现将《神里凌华大学本科生转专业管理办法》印发给你们，请遵照执行。</p>
+            
+            <div class="signature">
+                <p>神里凌华大学</p>
+                <p><span id="publish-date-2"></span></p>
+            </div>
+            
+            <hr class="my-8 border-gray-300">
+
+            <h2>神里凌华大学本科生转专业管理办法</h2>
+            <p>为全面提高本科生培养质量，充分发挥学生学习的积极性，激发学生主动学习的热情，给予学生更多选择权和选择空间，推动学生个性化发展，建立有利于人才成长的制度保障，根据《普通高等学校学生管理规定》和稻妻地区教育司相关文件要求，特制定本办法。</p>
+
+            <h3>一、工作组织</h3>
+            <p>学校转学与转专业议事机构为天领奉行会议，教务处负责统筹组织全校转专业工作，各社奉行成立院级转专业工作领导小组，组织本单位转专业工作。</p>
+
+            <h3>二、转专业原则</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li>公开、公平、公正原则和集体决议原则；</li>
+                <li>体现社会对人才需求、有利于促进就业的原则；</li>
+                <li>因材施教、有利于学生自主学习和个性发展的原则；</li>
+                <li>确保转入专业办学条件和培养能力相匹配原则；</li>
+                <li>优先满足休学创业和退役后复学学生转专业要求的原则；</li>
+                <li>学生本人自愿申请原则。</li>
+            </ul>
+
+            <h3>三、转专业基本条件</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li>非定向培养全日制本科生。</li>
+                <li>遵纪守法，品行端正，在校期间无任何违法违纪记录。</li>
+                <li>身心健康，符合转入专业对身体条件的要求。</li>
+            </ul>
+
+            <h3>四、不予转专业情形</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li>未报到入学、未注册取得学籍或入学未满一学年的；</li>
+                <li>艺术类、体育类、普通类三者之间跨类别的；</li>
+                <li>以特殊招生形式录取的学生，国家有相关规定或者录取前与学校有明确约定不得转专业的；</li>
+                <li>毕业年级学生；</li>
+                <li>休学期间的以及应予退学者；</li>
+                <li>已转过专业者（学校专业调整等除外）；</li>
+                <li>未经统一招生考试的特殊类型学生，含专升本。</li>
+            </ul>
+            
+            <h3>五、转专业学生类别</h3>
+            <p>学生有下列情况之一者，可以申请转专业：</p>
+            <p class="indented-p"><b>1. 学业优秀类：</b>必须修满原专业一年级教学计划规定的全部课程，学业成绩优秀，所修课程学分绩点排名在本专业前20%以内。</p>
+            <p class="indented-p"><b>2. 学科专长类：</b>在拟转入学科专业方面有突出表现，例如在重要期刊发表论文，或获得高级别学科竞赛奖项。</p>
+            <p class="indented-p"><b>3. 特殊困难类：</b>入学后因身体原因或确有特殊困难，不转专业则无法继续学习者。</p>
+            <p class="indented-p"><b>4. 社会需求类：</b>学校根据社会对人才需求的发展变化，需要适当调整专业的。</p>
+            <p class="indented-p"><b>5. 复学类：</b>学生因休学、创业或应征入伍等原因复学后，原专业无后续班级，或根据相关政策可申请转入相关专业。</p>
+
+            <h3>六、转专业时间</h3>
+            <p>学业优秀类转专业一般在第一学年结束后、第二学年开学初进行；其他类型的转专业可在第三学期至第六学期开学初进行。</p>
+
+            <h3>七、转专业程序</h3>
+            <p>1. <b>公布方案</b>：各社奉行制定并公布考核方案及可接收人数，教务处审核后统一发布。</p>
+            <p>2. <b>学生申请</b>：学生填写申请表，经所在社奉行审核同意后报送教务处。</p>
+            <p>3. <b>组织考核</b>：拟转入的社奉行组织专家对申请学生进行考核。</p>
+            <p>4. <b>公布结果</b>：教务处汇总名单，报校领导审批后在校内公示。</p>
+            <p>5. <b>学籍变更</b>：公示无异议后，提交天领奉行会议审议，通过后由教务处统一办理学籍变更手续。</p>
+            
+            <h3>八、转专业相关要求</h3>
+            <p>转专业学生按转入专业的人才培养方案学习，学分认定、毕业资格审核等均按新专业标准执行。学费自转入新专业起按新专业标准收取。各单位需做好学生档案交接工作，并严格遵守工作纪律。</p>
+
+            <h3>九、其他</h3>
+            <p>本管理办法自公布之日起执行，原有相关规定同时废止，本管理办法由教务处负责解释。</p>
+
+            <!-- 文章内容结束 -->
+        </div>
+    </main>
+
+    <!-- 页脚 (和主页一致) -->
+    <footer class="bg-white/75 backdrop-blur-sm shadow-inner mt-auto">
+        <div class="container mx-auto px-4 py-5">
+            <div class="text-center text-sm text-gray-500 pt-5 border-t border-gray-200">
+                <p>Copyright &copy; 2024 神里凌华大学教务处</p>
+                <p class="mt-1">地址: 稻妻城天领奉行府内 | 邮编: <span id="postal-code"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- 随机化内容生成 ---
+            
+            const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+            const randomDate = (start, end) => new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+            const formatDate = (date) => `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
+
+            const currentYear = new Date().getFullYear();
+            const publishDate = randomDate(new Date(currentYear - 4, 5, 1), new Date(currentYear - 3, 6, 30));
+            const formattedPublishDate = formatDate(publishDate);
+            
+            const setText = (id, text) => {
+                const el = document.getElementById(id);
+                if (el) el.textContent = text;
+            };
+            
+            setText('publish-date', formattedPublishDate);
+            setText('publish-date-2', formattedPublishDate);
+            setText('click-count', 0);
+            
+            // --- 其他页面功能 ---
+            const totalImages = 3; 
+            const imageNumber = Math.floor(Math.random() * totalImages) + 1;
+            const imageUrl = `../images/${imageNumber}.jpg`; 
+            document.body.style.backgroundImage = `url('${imageUrl}')`;
+
+            function generateJapanesePostalCode() {
+                const firstPart = String(getRandomInt(100, 999));
+                const secondPart = String(getRandomInt(0, 9999)).padStart(4, '0');
+                return `〒${firstPart}-${secondPart}`;
+            }
+            setText('postal-code', generateJapanesePostalCode());
+
+            const cursor = document.getElementById('custom-cursor');
+            if (cursor) {
+                cursor.style.backgroundImage = 'url(../cursors/AppStarting.gif)';
+                document.addEventListener('mousemove', function(e) {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
