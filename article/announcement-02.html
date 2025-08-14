@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 文章标题已更新 -->
+    <title>神里凌华大学作息时间表 - 神里凌华大学教务处</title>
+    <link rel="icon" href="../avatar/avatar.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            transition: background-image 1s ease-in-out;
+            cursor: none;
+        }
+        a, button { cursor: none; }
+        .content-card {
+            background-color: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .custom-cursor {
+            position: fixed;
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+            pointer-events: none;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+        }
+        /* 文章内容样式 */
+        .article-content h1 { font-size: 1.875rem; font-weight: 700; margin-bottom: 0.5rem; text-align: center; }
+        .article-content .meta { font-size: 0.875rem; color: #6b7280; margin-bottom: 2rem; text-align: center; border-bottom: 1px solid #e5e7eb; padding-bottom: 1rem;}
+    </style>
+</head>
+<body class="text-gray-800 flex flex-col min-h-screen">
+
+    <div id="custom-cursor" class="custom-cursor"></div>
+
+    <!-- 页头 (和主页一致) -->
+    <header class="bg-white/75 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="../avatar/avatar.png" alt="校徽" class="w-12 h-12 rounded-full">
+                <a href="../index.html" class="text-2xl font-bold text-gray-800">神里凌华大学教务处</a>
+            </div>
+            <div class="flex items-center space-x-4 text-sm text-gray-600">
+                <a href="https://kau.viatin.buzz/" target="_blank" class="hover:text-blue-600">学生工作部</a>
+                <span>|</span>
+                <a href="https://github.com/Yencry/Yencry.github.io/issues" target="_blank" class="hover:text-blue-600">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 文章主体内容 -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <div class="max-w-4xl mx-auto p-8 md:p-12 rounded-2xl shadow-xl content-card article-content">
+            
+            <!-- 文章内容已更新 -->
+            <h1>神里凌华大学作息时间表</h1>
+            <div class="meta">
+                <span>发布部门：教务处</span> | 
+                <span>最后更新：<span id="publish-date"></span></span>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-center border-collapse">
+                    <thead>
+                        <tr class="bg-blue-100/50">
+                            <th class="border p-3 font-semibold">课 &nbsp;节</th>
+                            <th class="border p-3 font-semibold">上课时间</th>
+                            <th class="border p-3 font-semibold">课 &nbsp;节</th>
+                            <th class="border p-3 font-semibold">上课时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-100/50">
+                            <td class="border p-3">第一节</td>
+                            <td class="border p-3">8:00～8:45</td>
+                            <td class="border p-3">第七节</td>
+                            <td class="border p-3">14:50～15:35</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100/50">
+                            <td class="border p-3">第二节</td>
+                            <td class="border p-3">8:55～9:40</td>
+                            <td class="border p-3">第八节</td>
+                            <td class="border p-3">15:45～16:30</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100/50">
+                            <td class="border p-3">第三节</td>
+                            <td class="border p-3">10:00～10:45</td>
+                            <td class="border p-3">第九节</td>
+                            <td class="border p-3">16:40～17:25</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100/50">
+                            <td class="border p-3">第四节</td>
+                            <td class="border p-3">10:55～11:40</td>
+                            <td class="border p-3">第十节</td>
+                            <td class="border p-3">17:35～18:20</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100/50">
+                            <td class="border p-3">第五节</td>
+                            <td class="border p-3">13:00～13:45</td>
+                            <td class="border p-3">第十一节</td>
+                            <td class="border p-3">19:30～20:15</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100/50">
+                            <td class="border p-3">第六节</td>
+                            <td class="border p-3">13:55～14:40</td>
+                            <td class="border p-3">第十二节</td>
+                            <td class="border p-3">20:25～21:10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 文章内容结束 -->
+
+        </div>
+    </main>
+
+    <!-- 页脚 (和主页一致) -->
+    <footer class="bg-white/75 backdrop-blur-sm shadow-inner mt-auto">
+        <div class="container mx-auto px-4 py-5">
+            <div class="text-center text-sm text-gray-500 pt-5 border-t border-gray-200">
+                <p>Copyright &copy; 2024 神里凌华大学教务处</p>
+                <p class="mt-1">地址: 稻妻城天领奉行府内 | 邮编: <span id="postal-code"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- 随机化内容生成 ---
+            const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+            const formatDate = (date) => `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
+
+            const today = new Date();
+            const formattedPublishDate = formatDate(today);
+            
+            const setText = (id, text) => {
+                const el = document.getElementById(id);
+                if (el) el.textContent = text;
+            };
+            
+            setText('publish-date', formattedPublishDate);
+            
+            // --- 其他页面功能 ---
+            const totalImages = 3; 
+            const imageNumber = Math.floor(Math.random() * totalImages) + 1;
+            const imageUrl = `../images/${imageNumber}.jpg`; 
+            document.body.style.backgroundImage = `url('${imageUrl}')`;
+
+            function generateJapanesePostalCode() {
+                const firstPart = String(getRandomInt(100, 999));
+                const secondPart = String(getRandomInt(0, 9999)).padStart(4, '0');
+                return `〒${firstPart}-${secondPart}`;
+            }
+            setText('postal-code', generateJapanesePostalCode());
+
+            const cursor = document.getElementById('custom-cursor');
+            if (cursor) {
+                cursor.style.backgroundImage = 'url(../cursors/AppStarting.gif)';
+                document.addEventListener('mousemove', function(e) {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
