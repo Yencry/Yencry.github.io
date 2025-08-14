@@ -54,11 +54,9 @@
                 <a href="index.html" class="text-2xl font-bold text-gray-800">神里凌华大学教务处</a>
             </div>
             
-            <!-- 顶部工具栏 -->
+            <!-- 顶部工具栏 (已更新) -->
             <div class="flex items-center space-x-4 text-sm text-gray-600">
-                <a href="#" id="setHomepage" class="hover:text-blue-600">设为首页</a>
-                <span>|</span>
-                <a href="#" id="addFavorite" class="hover:text-blue-600">加入收藏</a>
+                <a href="https://kau.viatin.buzz/" target="_blank" class="hover:text-blue-600">学生工作部</a>
                 <span>|</span>
                 <a href="https://github.com/Yencry/Yencry.github.io/issues" target="_blank" class="hover:text-blue-600">联系我们</a>
             </div>
@@ -226,42 +224,6 @@
             const postalCodeElement = document.getElementById('postal-code');
             if (postalCodeElement) {
                 postalCodeElement.textContent = generateJapanesePostalCode();
-            }
-
-            // --- 设为首页功能 ---
-            const setHomepageBtn = document.getElementById('setHomepage');
-            if (setHomepageBtn) {
-                setHomepageBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    try {
-                        document.body.style.behavior = 'url(#default#homepage)';
-                        document.body.setHomePage(window.location.href);
-                    } catch (error) {
-                        alert("您的浏览器不支持自动设为首页，请手动设置。");
-                    }
-                });
-            }
-
-            // --- 加入收藏功能 ---
-            const addFavoriteBtn = document.getElementById('addFavorite');
-            if (addFavoriteBtn) {
-                addFavoriteBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const url = window.location.href;
-                    const title = document.title;
-                    try {
-                        // For IE
-                        window.external.addFavorite(url, title);
-                    } catch (e1) {
-                        try {
-                            // For Firefox
-                            window.sidebar.addPanel(title, url, "");
-                        } catch (e2) {
-                            // For other modern browsers
-                            alert("您的浏览器不支持自动加入收藏，请按 " + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Command/Cmd' : 'CTRL') + "+D 手动收藏。");
-                        }
-                    }
-                });
             }
         });
     </script>
